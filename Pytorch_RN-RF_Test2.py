@@ -15,9 +15,9 @@ from moviepy.editor import VideoFileClip
 from moviepy.video.io import ImageSequenceClip
 import time
 
-globalTestPath = "C:/Users/13215/Desktop/Test/" #Path containing Program
+globalTestPath = "" #Path containing Program
 
-data_dir = globalTestPath + "Test3" #Folder I used to store images
+data_dir = globalTestPath + "" #Folder I used to store images
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu') 
 print('Running on device: {}'.format(device)) #Check for GPU, otherwise use CPU
@@ -132,7 +132,7 @@ def boxFaces(match_embeddings, image, drawType = "PIL"):
 
 
 def main():
-    img1_path = "C:/Users/13215/Desktop/Test/img1.jpg" #Test Image
+    img1_path = "" #Test Image Path
 
     img1 = loadImg(img1_path) #Loads Test Image
 
